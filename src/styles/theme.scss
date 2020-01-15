@@ -9,25 +9,25 @@ $theme-font: (
     (
       name: 'circular-std-medium',
       fallback: sans-serif,
-      download: (link: '../fonts/circular-std-medium/circular-std-medium')
+      download: (link: '../src/assets/fonts/circular-std-medium/circular-std-medium')
     ),
   'default-bold':
     (
       name: 'circular-std-bold',
       fallback: sans-serif,
-      download: (link: '../fonts/circular-std-bold/circular-std-bold')
+      download: (link: '../src/assets/fonts/circular-std-bold/circular-std-bold')
     ),
   'default-black':
     (
       name: 'circular-std-black',
       fallback: sans-serif,
-      download: (link: '../fonts/circular-std-black/circular-std-black')
+      download: (link: '../src/assets/fonts/circular-std-black/circular-std-black')
     ),
   'default-book':
     (
       name: 'circular-std-book',
       fallback: sans-serif,
-      download: (link: '../fonts/circular-std-book/circular-std-book')
+      download: (link: '../src/assets/fonts/circular-std-book/circular-std-book')
     )
 );
 
