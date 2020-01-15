@@ -7036,6 +7036,10 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
+"sass-library@https://github.com/jf-swain/sass-library":
+  version "1.0.0"
+  resolved "https://github.com/jf-swain/sass-library#01cac31afa3bed93cb617b9daf1ddca614c00a46"
+
 sass-loader@^8.0.0:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-8.0.2.tgz#debecd8c3ce243c76454f2e8290482150380090d"

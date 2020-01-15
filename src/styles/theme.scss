@@ -1,0 +1,49 @@
+////
+/// @group theme
+////
+
+/// Theme-font
+/// Manage font family in the project
+$theme-font: (
+  'default':
+    (
+      name: 'circular-std-medium',
+      fallback: sans-serif,
+      download: (link: '../fonts/circular-std-medium/circular-std-medium')
+    ),
+  'default-bold':
+    (
+      name: 'circular-std-bold',
+      fallback: sans-serif,
+      download: (link: '../fonts/circular-std-bold/circular-std-bold')
+    ),
+  'default-black':
+    (
+      name: 'circular-std-black',
+      fallback: sans-serif,
+      download: (link: '../fonts/circular-std-black/circular-std-black')
+    ),
+  'default-book':
+    (
+      name: 'circular-std-book',
+      fallback: sans-serif,
+      download: (link: '../fonts/circular-std-book/circular-std-book')
+    )
+);
+
+/// Theme-color
+/// Manage color in the project
+$theme-color: (
+  default: #373738,
+  primary: #484848,
+  secondary: #FEBD17,
+);
+
+/// Config-map
+/// Connect map project with sass-library
+/// @link http://sass-library.swain-creative.com/
+$config-map: ('color': $theme-color, 'font': $theme-font, 'font-face': $theme-font);
+
+/// import
+@import '~sass-library/import-v2.scss';
+
