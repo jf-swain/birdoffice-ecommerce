@@ -1,0 +1,37 @@
+<template>
+  <header>
+    <img class="app-logo" src="@/assets/images/logo.svg" alt="Dewalt Logo" />
+
+    <app-shopping />
+  </header>
+</template>
+
+<script>
+  import Shopping from './Shopping';
+
+  export default {
+    components: {
+      appShopping: Shopping
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+  header {
+    align-items: center;
+    box-shadow: 0 1px 1px #00000026;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    @include breakpoint('beyond-medium') {
+      padding: 0 7rem;
+    }
+  }
+
+  .app-logo {
+    height: 3.8rem;
+  }
+
+</style>

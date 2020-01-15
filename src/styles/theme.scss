@@ -36,13 +36,30 @@ $theme-font: (
 $theme-color: (
   default: #373738,
   primary: #484848,
-  secondary: #FEBD17,
+  secondary: #acacac,
+  border: #c3c3c3,
+  highlight: #febd17,
+  basic-white: #ffffff,
+);
+
+/// Theme-breakpoint
+/// Manage breakpoint use in the project
+$theme-breakpoint: (
+  'beyond-medium': (min: 768px)
 );
 
 /// Config-map
 /// Connect map project with sass-library
 /// @link http://sass-library.swain-creative.com/
-$config-map: ('color': $theme-color, 'font': $theme-font, 'font-face': $theme-font);
+$config-map: (
+  'color': $theme-color,
+  'font': $theme-font,
+  'font-face': $theme-font,
+  'breakpoint': $theme-breakpoint,
+);
+
+/// define root size for font and rem
+$root-size: 10;
 
 /// import
 @import '~sass-library/import-v2.scss';
