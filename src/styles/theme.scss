@@ -28,6 +28,18 @@ $theme-font: (
       name: 'circular-std-book',
       fallback: sans-serif,
       download: (link: '../src/assets/fonts/circular-std-book/circular-std-book')
+    ),
+  'primary-light':
+    (
+      name: 'sfuitext-light',
+      fallback: sans-serif,
+      download: (link: '../src/assets/fonts/sfuitext-light/sfuitext-light')
+    ),
+  'primary-semibold':
+    (
+      name: 'sfuitext-semibold',
+      fallback: sans-serif,
+      download: (link: '../src/assets/fonts/sfuitext-semibold/sfuitext-semibold')
     )
 );
 
@@ -45,7 +57,8 @@ $theme-color: (
 /// Theme-breakpoint
 /// Manage breakpoint use in the project
 $theme-breakpoint: (
-  'beyond-medium': (min: 768px)
+  'beyond-medium': (min: 768px),
+  'beyond-project': (min: 1032px),
 );
 
 /// Config-map
@@ -61,6 +74,11 @@ $config-map: (
 /// define root size for font and rem
 $root-size: 10;
 
+/// Define project wrapper
+$project-inner: 1032px;
+$project-mobile-padding: 1rem;
+
+
+
 /// import
 @import '~sass-library/import-v2.scss';
-

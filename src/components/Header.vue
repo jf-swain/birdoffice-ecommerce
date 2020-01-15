@@ -23,9 +23,9 @@
     display: flex;
     height: 8rem;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 $project-mobile-padding;
 
-    @include breakpoint('beyond-medium') {
+    @include breakpoint(1172) {
       padding: 0 7rem;
     }
   }
