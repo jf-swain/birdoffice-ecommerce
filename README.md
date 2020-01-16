@@ -1,11 +1,27 @@
 # birdoffice-ecommerce
 
-## Project setup
+Test Technique for Bird Office with Vue.js
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+Cloning the repo or download it
+
 ```
-yarn install
+git clone https://github.com/jf-swain/birdoffice-ecommerce.git
+```
+
+Install dependencies:
+
+```
+yarn
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 yarn serve
 ```
@@ -15,10 +31,17 @@ yarn serve
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Built With
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* [Vue](https://vuejs.org/index.html) - The ProgressiveJavaScript Framework
+* [Vuex](https://vuex.vuejs.org/) - A state management pattern + library for Vue.js applications
+* [Sass-library](https://github.com/jf-swain/sass-library) - A personnal library with mixin and function ([doc](http://sass-library.swain-creative.com/))
+
+## Authors
+
+* **Jean-François Swain** - [jf-swain](https://github.com/jf-swain)
+
+
+## License
+
+This project is licensed under the MIT License
