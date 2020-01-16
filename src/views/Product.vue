@@ -2,18 +2,19 @@
   <section>
     <article>
       <header>
-        <h2>{{product.title}}</h2>
-        <span class="amount">eur {{product.price}}</span>
+        <h1>{{product.title}}</h1>
+
+        <span class="amount">$ {{product.price | currency('en-US')}}</span>
       </header>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam</p>
 
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <div v-html="product.description" class="description"/>
 
-      <p
-        class="annotate"
-      >Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO</p>
-      <add-to-cart />
+      <p class="annotate">
+        Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO
+      </p>
+      <add-to-cart :price="product.price" />
     </article>
+
     <aside>
       <img :src="require(`../assets/images/product/${product.image}`)" alt />
     </aside>
@@ -26,16 +27,13 @@ import AddProduct from "@/components/AddProduct";
 export default {
   props: {
     title: {
-      type: String,
-      required: true
+      type: String
     },
     image: {
-      type: String,
-      required: true
+      type: String
     },
     amount: {
-      type: Number,
-      required: true
+      type: Number
     }
   },
   components: {
@@ -89,7 +87,7 @@ section {
   }
 }
 
-h2 {
+h1 {
   color: color("default");
   font-family: font-name("default-black");
   font-size: rem(24);
@@ -113,7 +111,7 @@ h2 {
   }
 }
 
-p {
+.description, p {
   color: color("primary");
   font-family: font-name("default-book");
   font-size: rem(16);
