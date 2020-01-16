@@ -6,6 +6,10 @@ Test Technique for Bird Office with Vue.js
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+## Live
+
+production has been done [here](http://birdoffice-ecommerce.swain-creative.com/) in order to facilitate your review
+
 ### Installing
 
 Cloning the repo or download it
