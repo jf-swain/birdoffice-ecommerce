@@ -6,11 +6,7 @@
       </header>
 
       <div class="home-content">
-        <products />
-        <products />
-        <products />
-        <products />
-        <products />
+        <products v-for="(product, index) in products" :key="index" :product="product" />
       </div>
     </article>
 
@@ -20,66 +16,66 @@
       </header>
 
       <div class="home-content">
-        <products />
-        <products />
-        <products />
-        <products />
-        <products />
+        <products v-for="(product, index) in products" :key="index" :product="product" featured />
       </div>
     </article>
-
   </section>
 </template>
 
 <script>
-  import Product from '@/components/Product';
+import Product from "@/components/Product";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     products: Product
+  },
+  computed: {
+    products() {
+      return this.$store.getters.products;
+    }
   }
-}
+};
 </script>
 
 
 <style lang="scss" scoped>
-  section {
-    max-width: $project-inner;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $project-mobile-padding;
-    padding-right: $project-mobile-padding;
+section {
+  max-width: $project-inner;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $project-mobile-padding;
+  padding-right: $project-mobile-padding;
 
-    @include breakpoint(1052) {
-      padding-left: 0;
-      padding-right: 0;
-    }
+  @include breakpoint(1052) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+h2 {
+  font-family: font-name("default-black");
+  font-size: rem(32);
+  margin-top: 4rem;
+
+  @include breakpoint("beyond-project") {
+    margin-top: 8.8rem;
+  }
+}
+
+.home-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  a {
+    max-width: 100/5 * 1%;
+    min-width: rem(150);
   }
 
-  h2 {
-    font-family: font-name('default-black');
-    font-size: rem(32);
-    margin-top: 4rem;
-
-    @include breakpoint('beyond-project') {
-      margin-top: 8.8rem;
-    }
+  @include breakpoint("beyond-project") {
+    justify-content: space-evenly;
   }
-
-  .home-content {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    div {
-      max-width: 100/5 * 1%;
-      min-width: rem(150);
-    }
-
-    @include breakpoint('beyond-project') {
-      justify-content: space-evenly;
-    }
-  }
+}
 </style>
