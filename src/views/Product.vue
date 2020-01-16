@@ -91,7 +91,11 @@ h1 {
   color: color("default");
   font-family: font-name("default-black");
   font-size: rem(24);
-  margin: 0;
+  margin: 2rem 0 0;
+
+  @include breakpoint('beyond-medium') {
+    margin: 0;
+  }
 
   @include breakpoint("beyond-project") {
     font-size: rem(52);

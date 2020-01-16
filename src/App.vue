@@ -30,5 +30,6 @@ html {
   font-family: font-name("default");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 3rem;
 }
 </style>

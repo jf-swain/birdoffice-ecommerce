@@ -70,8 +70,16 @@ h2 {
   flex-wrap: wrap;
 
   a {
-    max-width: 100/5 * 1%;
+    max-width: 50%;
     min-width: rem(150);
+
+    @include breakpoint(600) {
+      max-width: 100/3 * 1%;
+    }
+
+    @include breakpoint(820) {
+      max-width: 100/5 * 1%;
+    }
   }
 
   @include breakpoint("beyond-project") {
