@@ -7043,7 +7043,7 @@ sass-graph@^2.2.4:
 
 "sass-library@https://github.com/jf-swain/sass-library":
   version "1.0.0"
-  resolved "https://github.com/jf-swain/sass-library#01cac31afa3bed93cb617b9daf1ddca614c00a46"
+  resolved "https://github.com/jf-swain/sass-library#9aa421ffb1f22ddaf06ce2103959fee7d7c444a8"
 
 sass-loader@^8.0.0:
   version "8.0.2"
