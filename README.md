@@ -8,9 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Live
 
-production has been done [here](http://birdoffice-ecommerce.swain-creative.com/) in order to facilitate your review
+Production has been done [here](http://birdoffice-ecommerce.swain-creative.com/) in order to facilitate your review
 
-### Installing
+## Installing
 
 Cloning the repo or download it
 
@@ -24,13 +24,13 @@ Install dependencies:
 yarn
 ```
 
-### Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
 
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+## Compiles and minifies for production
 ```
 yarn build
 ```
