@@ -42,7 +42,7 @@ export default {
   computed: {
     product() {
       const pdt = this.$store.getters.products.find(
-        elmt => elmt.id == this.$route.params.id
+        elmt => elmt.id === this.$route.params.id
       );
 
       return pdt;

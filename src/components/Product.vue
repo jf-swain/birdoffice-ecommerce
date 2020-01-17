@@ -2,7 +2,7 @@
   <router-link
     :to="/product/ + product.id"
     class="link"
-    v-if="product.featured == featured"
+    v-if="product.featured === featured"
   >
     <div class="product">
       <img :src="require(`../assets/images/product/${product.image}`)" alt />
